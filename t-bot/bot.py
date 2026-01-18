@@ -1,18 +1,10 @@
-import os
 import logging
-from dotenv import load_dotenv
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-# .env fayldan o'zgaruvchilarni yuklash
-load_dotenv()
-
-BOT_TOKEN = os.getenv('BOT_TOKEN')
-ADMIN_ID = os.getenv('ADMIN_ID')
-
-if not BOT_TOKEN or not ADMIN_ID:
-    print('BOT_TOKEN yoki ADMIN_ID set qilinmagan')
-    exit(1)
+# Bot sozlamalari
+BOT_TOKEN = "8569658196:AAHYnr5rMzB-eRSovJzTSZiIo-z-GHYOyNc"
+ADMIN_ID = "6161201141"
 
 # Logging sozlash
 logging.basicConfig(
